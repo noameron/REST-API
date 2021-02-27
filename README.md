@@ -1,6 +1,6 @@
 # Stores REST API
 
-This is built with Flask, Flask-RESTful, Flask-JWT, Flask-JWT-Extended Flask-SQLAlchemy (ORM)
+This is built with Flask, Flask-RESTful, Flask-JWT, Flask-JWT-Extended and Flask-SQLAlchemy (ORM)
 
 Deployed on DigitalOcean.
 
