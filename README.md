@@ -2,7 +2,7 @@
 
 This is built with Flask, Flask-RESTful, Flask-JWT, Flask-JWT-Extended and Flask-SQLAlchemy (ORM).
 
-Deployed on DigitalOcean.
+Deployed on Heroku and DigitalOcean.
 
 ### Usage:
 
