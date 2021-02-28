@@ -32,6 +32,7 @@ class UserRegister(Resource):
 
         return {"message": "User created successfully."}, 201
 
+      
 class User(Resource):
 
     @classmethod
@@ -50,6 +51,7 @@ class User(Resource):
         user.delete_from_db()
         return {'message': 'User deleted'}, 200
 
+      
 class UserLogin(Resource):
 
     @classmethod
