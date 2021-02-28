@@ -83,8 +83,9 @@ class UserLogout(Resource):
 
 
 class TokenRefresh(Resource):
-    # if a user just logged in then he has fresh token, 
-    # if he is 
+    # if a user just logged in then he has fresh token
+    # if token is not Fresh it means they didn't just log in
+    # refresh token purpose is to ask for a new access token 
     @jwt_required(refresh = True)
     def post(self):
         current_user = get_jwt_identity()
