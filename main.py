@@ -12,6 +12,7 @@ from resources.user import (TokenRefresh, User, UserLogin, UserLogout,
                             UserRegister)
 
 app = Flask(__name__)
+# DATABASE_URL is a Postgres variable defined at Heroku server
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///data.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
