@@ -53,6 +53,7 @@ class Item(Resource):
             return {'message': 'Item deleted.'}
         return {'message': 'Item not found.'}, 404
 
+    @jwt_required()
     def put(self, name):
         data = Item.parser.parse_args()
 
