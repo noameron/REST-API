@@ -42,7 +42,7 @@ def add_claims_to_jwt(identity):
 def check_if_token_in_blacklist(_decrypted_header, decrypted_body):
     return decrypted_body['jti'] in BLACKLIST
 
-# fresh token expires after 15 min
+# fresh token expires after 20 min
 @jwt.expired_token_loader
 def expired_token_callback(_decrypted_header, _decrypted_body):
     return {
