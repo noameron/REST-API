@@ -4,7 +4,7 @@ from db import put_customer_id, get_customer_id
 
 app = Flask(__name__)
 
-
+# test
 @app.route('/customer_id', methods=['PUT'])
 def add_customer_id():
     customer_id = request.json.get('customer_id')
